@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Inscripciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio 🏠</a></li>
+                <li><a href="galeria.html">Servicio de Mototaxis 🛺</a></li>
+                <li><a href="inscripciones.html">Inscripciones 📂</a></li>
+                <li><a href="cursos.html">Cursos 📚</a></li>
+                <li><a href="contacto.html">Contáctanos 📫</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="animate">Formulario de Inscripción</h1>
+
+    <div class="contenedor-flex">
+        <form id="formularioInscripcion" class="formulario animate">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required class="input-redondo"><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required class="input-redondo"><br>
+
+            <label for="archivo">Sube tu currículum (PDF):</label>
+            <p>Los requisitos son los siguientes:</p>   
+            <a href="https://docs.google.com/document/d/1mSa1Y9XeX0xT0WmoVp_Typ_zwSjLYCaxWrMJWvLvhm4/edit?tab=t.0" class="boton" target="_blank">
+                Ver requisitos
+            </a><br><br>
+
+            <input type="file" id="archivo" name="archivo" accept="application/pdf" required class="input-redondo"><br>
+            <div id="fileNameDisplay" style="margin-bottom: 1em;"></div>
+
+            <button type="submit" class="btn-verde">Enviar</button>
+        </form>
+
+        <div class="columna-derecha">
+            <div class="beneficios-grid">
+                <div class="beneficio">
+                  <img src="img/pnp.png" alt="Convenio con la PNP" />
+                  <h4>Convenio con la PNP</h4>
+                  <p>Trabajamos con respaldo oficial.</p>
+                </div>
+              
+                <div class="beneficio">
+                  <img src="img/horario.png" alt="Horarios Flexibles" />
+                  <h4>Horarios Flexibles</h4>
+                  <p>Adaptamos tu jornada laboral.</p>
+                </div>
+              
+                <div class="beneficio">
+                  <img src="img/soporte.png" alt="Soporte Constante" />
+                  <h4>Soporte Constante</h4>
+                  <p>Asistencia y ayuda permanente.</p>
+                </div>
+              
+                <div class="beneficio">
+                  <img src="img/contrato.png" alt="Contrato Formal" />
+                  <h4>Contrato Formal</h4>
+                  <p>Legalidad y seguridad laboral.</p>
+                </div>
+              
+                <div class="beneficio">
+                  <img src="img/indumentaria.png" alt="Indumentaria Oficial" />
+                  <h4>Indumentaria Oficial</h4>
+                  <p>Fotocheck, chalecos y más.</p>
+                </div>
+              
+                <div class="beneficio">
+                  <img src="img/trabajo.png" alt="Trabajo en Equipo" />
+                  <h4>Trabajo en Equipo</h4>
+                  <p>Colaboración para el éxito.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="volver-centro">
+        <a href="index.html" class="btn-verde">Volver al inicio</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
